@@ -1,0 +1,13 @@
+::-moz-selection { 
+    color: white;
+    background: #007acc;
+}
+
+::selection {
+    color: white;
+    background: #007acc;
+}
+
+.mobile-toggler {
+display: block;
+}

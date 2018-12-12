@@ -1,7 +1,3 @@
-# A little blog
-This blog is created with Gatsby
+hassansalami.com
 
-Get started with Gatsby by visiting `https://github.com/gatsbyjs/`
-
-
-
+Built with ❤ and Gatsby.
