@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{140:function(n,t,e){"use strict";e.r(t),e.d(t,"default",function(){return i});var r=e(7),o=e.n(r),u=e(0),a=e.n(u),i=function(n){function t(){return n.apply(this,arguments)||this}return o()(t,n),t.prototype.render=function(){return a.a.createElement("div",null,a.a.createElement("h2",null,"Contact page is not ready"))},t}(a.a.Component)}}]);
+//# sourceMappingURL=component---src-pages-contact-js-0840a96d6f8f373ce0c8.js.map
