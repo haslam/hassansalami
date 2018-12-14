@@ -26,7 +26,7 @@ class Blog extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
         />
-        <div className={card__container} style={{marginTop: rhythm(3), marginBottom: rhythm(4)}}>
+        <div className={card__container} style={{marginTop: rhythm(3), marginBottom: rhythm(1)}}>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           const tag = get(node, 'frontmatter.tag') || 'no_tag'
