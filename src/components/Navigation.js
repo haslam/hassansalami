@@ -49,7 +49,7 @@ export class Header extends React.Component {
           <ul className={styles.header__menu} id="nav_menu">
             <li className={styles.header__menu_item}><Link to={'/'}>Home</Link></li>
             <li className={styles.header__menu_item}><Link to={'/blog'}>Blog</Link></li>
-            <li className={styles.header__menu_item}><Link to={'#'}>Perks</Link></li>
+            <li className={styles.header__menu_item}><Link to={'#'}>Lessons</Link></li>
             <li className={styles.header__menu_item}><Link to={'#'}>Contact</Link></li>
           </ul>
         </nav>
