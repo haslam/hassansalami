@@ -54,6 +54,7 @@
   padding: 0 .8rem;
 }
 
-.bio__social_item>svg {
+.bio__social_item>a {
   color: rgba(92, 89, 89, 0.5);
+  box-shadow: none;
 }

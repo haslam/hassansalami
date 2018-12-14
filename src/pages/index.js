@@ -7,6 +7,9 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import { rhythm } from '../utils/typography'
 
+import Card from '../components/Card'
+import { card__container } from '../styles/card.module.css'
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
@@ -24,24 +27,27 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <Bio />
+        <div className={card__container} style={{marginTop: rhythm(3), marginBottom: rhythm(4)}}>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
+          const tag = get(node, 'frontmatter.tag') || 'no_tag'
+          const slug = node.fields.slug
+          const excerpt = node.excerpt
+          const { date, author } = node.frontmatter
+
           return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
+            <Card
+              key={slug}
+              tag={tag}
+              title={title}
+              excerpt={excerpt}
+              date={date}
+              author={author}
+              slug={slug}
+             />
           )
         })}
+        </div>
       </Layout>
     )
   }
@@ -57,7 +63,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(limit: 8, sort: { fields: [frontmatter___date], order: DESC }, filter: {frontmatter: {tag: {ne: null}}}) {
       edges {
         node {
           excerpt
@@ -67,6 +73,8 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
+            tag
+            author
           }
         }
       }

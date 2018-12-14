@@ -1,11 +1,11 @@
 ::-moz-selection { 
     color: white;
-    background: #007acc;
+    background: hsl(24, 97%, 45%);
 }
 
 ::selection {
     color: white;
-    background: #007acc;
+    background: hsl(24, 97%, 45%);
 }
 
 .mobile-toggler {

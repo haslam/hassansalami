@@ -1,0 +1,98 @@
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 340px;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card__layer {
+  opacity: .9;
+  color: white;
+}
+
+.body__top {
+  display: flex;
+  flex-direction: column;
+  min-height: 120px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.body__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.post__tag {
+  flex: 1;
+  font-size: 80%;
+}
+
+.post__excerpt {
+  flex: 2;
+  font-weight: 400;
+  font-size: 90%;
+}
+
+.post__date {
+  font-size: 90%;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.post__author {
+  font-weight: 400;
+}
+
+.post__title {
+  font-size: 93%;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.dev {
+  background-image: linear-gradient(-180deg, rgba(119, 136, 153, 0.5) 0%, rgba(0, 0, 0, 0.8)), url(../assets/codebooks.jpg);
+}
+
+.dev .post__title,
+.dev .post__date {
+  color: hsl(0, 0%, 96%);
+}
+
+.perks {
+  background-image: linear-gradient(-180deg, rgba(0, 122, 204, 0.5) 0%, rgba(0, 0, 0, 0.8)), url(../assets/morning.jpg);
+}
+
+.perks .post__title,
+.perks .post__date {
+  color: hsl(60, 100%, 50%);
+}
+
+.photography {
+  background-image: linear-gradient(-180deg, rgba(204, 0, 122, 0.5) 0%, rgba(0, 0, 0, 0.8)), url(../assets/photographer.jpg);
+}
+
+.photography .post__title,
+.photography .post__date {
+  color: hsl(180, 100%, 50%);
+}
+
+.no_tag {
+  background-image: linear-gradient(-180deg, rgba(201, 186, 177, 0.5) 0%, rgba(0, 0, 0, 0.8)), url(../assets/camera.jpg);
+}
+
+.no_tag .post__title,
+.no_tag .post__date {
+  color: white;
+}

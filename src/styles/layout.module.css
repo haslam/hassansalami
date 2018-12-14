@@ -49,7 +49,7 @@
   }
 
   .header__menu_item a:focus {
-    background-color: #007acc;
+    background-color: hsl(24, 97%, 45%);
     color: white;
   }
 
@@ -91,7 +91,7 @@
 
 .header__menu {
   list-style: none;
-  overflow: auto;
+  overflow: hidden;
   background: none;
   transition: all .5s cubic-bezier(0, 1, 0.5, 1);
 }

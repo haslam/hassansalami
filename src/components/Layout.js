@@ -7,6 +7,7 @@ import styles from '../styles/layout.module.css'
 import '../styles/default.css'
 class Layout extends React.Component {
   render() {
+    const { children } = this.props;
     return (
       <div className={styles.container} >
         <Header />

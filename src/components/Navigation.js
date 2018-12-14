@@ -4,6 +4,7 @@ import { rhythm, scale } from '../utils/typography';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import styles from '../styles/layout.module.css';
+import siteLogo from '../assets/H-3ree.png'
 
 export class Header extends React.Component {
   constructor(props) {
@@ -23,7 +24,15 @@ export class Header extends React.Component {
       <header className={styles.main__header}>
         <h1 className={styles.header__logo}>
           <Link className={styles.header__logo_text} to={'/'}>
-            Hassan
+          <img
+            src={siteLogo}
+            alt={`Hassan Salami - H-3ree`}
+            style={{
+              marginBottom: 0,
+              width: rhythm(2),
+              height: rhythm(2),
+             }}
+          />
           </Link>
         </h1>
         <nav className={styles.header__nav}>
@@ -40,8 +49,8 @@ export class Header extends React.Component {
           <ul className={styles.header__menu} id="nav_menu">
             <li className={styles.header__menu_item}><Link to={'/'}>Home</Link></li>
             <li className={styles.header__menu_item}><Link to={'/blog'}>Blog</Link></li>
-            <li className={styles.header__menu_item}><Link to={'/perks'}>Perks</Link></li>
-            <li className={styles.header__menu_item}><Link to={'/contact'}>Contact</Link></li>
+            <li className={styles.header__menu_item}><Link to={'#'}>Perks</Link></li>
+            <li className={styles.header__menu_item}><Link to={'#'}>Contact</Link></li>
           </ul>
         </nav>
       </header>
