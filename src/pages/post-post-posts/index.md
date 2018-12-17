@@ -11,6 +11,6 @@ Over the years, I'd usually drop some goodies and hurties in there as they come 
 
 Please bear with me as I navigate the route and get used to it with you reading through my posts and pages haha. I promise it will get more and more interesting as I find time to write up posts from my archive of notes and lessons.
 
-Thank you!
+Thank guys!
 
 Best

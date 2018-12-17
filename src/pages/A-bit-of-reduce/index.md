@@ -51,3 +51,8 @@ Such that `a + b = c`. then `c` becomes the new `a` repeatedly.
 # What if the supplied initialValue > 0?
 
 Say we supplied an initialValue of `10`, no worries. reduce just use that as the starting `a` in our case. Which will increase our `b` and `c` by `10`. Therefore, our sum will also be increased by `10` in our case maing `51`.
+
+
+Thanks guys!
+
+Best
