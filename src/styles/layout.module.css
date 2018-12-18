@@ -120,6 +120,18 @@
   flex: 2;
 }
 
+.bright__link {
+  outline: none;
+  text-decoration: none;
+  transition: all .2s ease-out;
+  color: inherit;
+  background: linear-gradient(hsl(24, 97%, 45%), hsl(24, 97%, 55%));
+  background-size: 100% .1rem;
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0;
+  box-shadow: none;
+}
+
 /* Container */
 .container {
   width: 100%;
