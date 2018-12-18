@@ -1,6 +1,6 @@
 **hassansalami.com**
 
-Personal blog [hassansalami.com](https://hassansalami.com) built with 🧡 and Gatsby with thanks to the Netlify guys.
+Personal blog [hassansalami.com](https://hassansalami.com) built with 🧡 and [Gatsby](https://gatsbyjs.org) with thanks to the [Netlify](https://www.netlify.com) guys.
 
 To run locally, `yarn`, then `yarn dev`, open up [https://localhost:8000](https://localhost:8000).
 
