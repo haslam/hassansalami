@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styles from '../styles/card.module.css'
 
+const path = require('path')
 export default class Card extends React.Component {
   render () {
     const { tag, excerpt, title, date, author, slug  } = this.props;
@@ -22,3 +23,25 @@ export default class Card extends React.Component {
     )
   }
 }
+
+const GaplessCard = ({ extUrl, extScreen, extText }) => {
+  const assetPath = path.join(__dirname, '..', 'assets/screens', extScreen)
+  const sreenPics = require(`../assets/screens/${extScreen}`)
+  console.log('screen path is ', assetPath)
+  return (
+    <a 
+      href={extUrl}
+      className={styles.gaplessCard}
+      target='__blank'
+      rel='noreferrer noopener'
+      >
+      <div className={styles.gaplessImg}>
+        <img src={sreenPics} />
+      </div> 
+      <div className={styles.gaplessText} dangerouslySetInnerHTML={{__html: extText}} />
+    </a>
+  )
+  
+}
+
+export { GaplessCard }
