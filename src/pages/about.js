@@ -36,7 +36,7 @@ const portfolioData = [
     name: 'Jtool',
     url: 'https://jtool.cugcr.ca',
     screen: 'jtool.jpg',
-    caption: 'A topic modelling tool with ongoing development'
+    caption: 'A topic modelling tool for academic research'
   },
   {
     name: 'LTW Ontario',
