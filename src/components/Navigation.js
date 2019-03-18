@@ -46,12 +46,12 @@ export class Header extends React.Component {
             : <FontAwesomeIcon icon={faTimes} size="2x" /> 
           }
         </button>
-          <ul className={styles.header__menu} id="nav_menu">
+          {/* <ul className={styles.header__menu} id="nav_menu">
             <li className={styles.header__menu_item}><Link to={'/'}>Home</Link></li>
             <li className={styles.header__menu_item}><Link to={'/about'}>About</Link></li>
             <li className={styles.header__menu_item}><Link to={'/blog'}>Blog</Link></li>
             <li className={styles.header__menu_item}><Link to={'/contact'}>Contact</Link></li>
-          </ul>
+          </ul> */}
         </nav>
       </header>
     )
