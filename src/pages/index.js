@@ -24,9 +24,30 @@ class BlogIndex extends React.Component {
         <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
-          title="Undergoing restructuring... will be back."
+          title={siteTitle}
         />
-        <h2>Undergoing some awesome restructing... please bear with me.</h2>
+        <Bio />
+        <div className={card__container} style={{marginTop: rhythm(3), marginBottom: rhythm(1)}}>
+        {posts.map(({ node }) => {
+          const title = get(node, 'frontmatter.title') || node.fields.slug
+          const tag = get(node, 'frontmatter.tag') || 'no_tag'
+          const slug = node.fields.slug
+          const excerpt = node.excerpt
+          const { date, author } = node.frontmatter
+
+          return (
+            <Card
+              key={slug}
+              tag={tag}
+              title={title}
+              excerpt={excerpt}
+              date={date}
+              author={author}
+              slug={slug}
+             />
+          )
+        })}
+        </div>
       </Layout>
     )
   }
