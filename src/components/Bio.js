@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faPinterest, 
   faLinkedin, 
-  faTwitter,  
+  faTwitter,
+  faGithub,  
 } from "@fortawesome/free-brands-svg-icons";
 
 import profilePic from './profile.jpg'
@@ -67,6 +68,7 @@ export default class Bio extends React.Component {
               <li className={styles.bio__social_item}><a href="https://twitter.com/haslam956" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} size="lg" /></a></li>
               <li className={styles.bio__social_item}><a href="https://www.linkedin.com/in/hassanhersen-salami" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size="lg" /></a></li>
               <li className={styles.bio__social_item}><a href="https://www.pinterest.com/haslam414/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPinterest} size="lg" /></a></li>
+              <li className={styles.bio__social_item}><a href="https://www.github.com/haslam/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="lg" /></a></li>
             </ul>
           </div>
   
