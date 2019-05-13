@@ -60,7 +60,7 @@ export default class Bio extends React.Component {
             Hello, I'm <span style={{color: "#cc5200"}}>Hassan Salami</span>
           </h2>
           <p>
-             Front-End, UX/UI, Art, and Basketball.
+             Front-End. UX/UI. Art. Basketball.
           </p>
           <div style={{display: "flex"}}>
             <span style={{fontWeight: "600"}}>Find me on</span>

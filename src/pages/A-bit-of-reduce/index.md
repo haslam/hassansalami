@@ -11,7 +11,7 @@ JavaScript's reduce method executes a provided reducer function on each member o
 
 ###Basic function
 
-```
+```javascript
 //Consider an array on numbers as
 const arrayList = [2, 4, 5, 6, 7, 8, 9];
 
@@ -39,7 +39,7 @@ c. new accumulator
 
 Such that `a + b = c`. then `c` becomes the new `a` repeatedly.
 
-```
+```javascript
 0 + 2 = 2
 2 + 4 = 6
 6 + 5 = 11

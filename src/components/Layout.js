@@ -13,7 +13,7 @@ class Layout extends React.Component {
       <div className={styles.container} >
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     )
   }

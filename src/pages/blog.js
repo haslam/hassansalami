@@ -73,6 +73,16 @@ export const pageQuery = graphql`
             title
             tag
             author
+            image {
+              childImageSharp {
+                resize(width: 1200, height: 1200) {
+                  src
+                }
+                fluid(maxWidth: 786) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
