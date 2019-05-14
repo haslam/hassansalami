@@ -26,32 +26,32 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f681a505c78d1d73b12e.js"
+    "url": "webpack-runtime-0761a1271d84fd493e3b.js"
   },
   {
     "url": "app.b6f197430f783b3e67aa.css"
   },
   {
-    "url": "app-683d67023f7979819f88.js"
+    "url": "app-91c115df99da93712de8.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-6d4c22d25ec132b7f287.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "cd5841834d06522b917db3f3f466640d"
+    "revision": "5e551c5ee9202cda3bd66893083fc894"
   },
   {
     "url": "component---src-pages-404-js.580b7c4d07d4ea1800f5.css"
   },
   {
-    "url": "1.c5ad370999372cb7b3c2.css"
+    "url": "1.adc0f98feed0bf026bef.css"
   },
   {
-    "url": "2.99995a4e9b59448fc2da.css"
+    "url": "2.bddaef654c66ded1434d.css"
   },
   {
-    "url": "0-bc7ec34480eea4485c47.js"
+    "url": "0-3533cef8e19a29bac877.js"
   },
   {
     "url": "2-05edd251eba3a2790b86.js"
@@ -63,7 +63,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-404-js-b92c1c4d022f1944c270.js"
   },
   {
-    "url": "static/d/561/path---404-html-516-62a-eScO9mT6YRE2PcF2u8E3rFd3X4.json"
+    "url": "static/d/574/path---404-html-516-62a-0PDYIoIEdNbfOZCeblXv8qcF99Q.json"
   },
   {
     "url": "static/d/520/path---offline-plugin-app-shell-fallback-a-30-c5a-NZuapzHg3X9TaN1iIixfv1W23E.json"
@@ -91,7 +91,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/hersens/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -160,7 +160,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/hersens${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }

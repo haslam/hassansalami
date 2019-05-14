@@ -3,9 +3,10 @@ title: Array Day!
 date: '2019-04-26T15:45:17.121Z'
 tag: 'Dev'
 author: 'Hassan'
-image: arrayDay.jpg
+image: "./arrayDay.jpg"
 ---
 
+![Array properties and methods](/arrayDay.jpg)
 
 Array data types are a kind of object useful for storing sequences of values. The Array object in JavaScript is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations.
