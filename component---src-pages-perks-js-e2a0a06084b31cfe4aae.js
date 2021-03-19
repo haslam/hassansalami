@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{"vz+f":function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return a}));var r=t("dI71"),o=t("q1tI"),u=t.n(o),a=function(n){function e(){return n.apply(this,arguments)||this}return Object(r.a)(e,n),e.prototype.render=function(){return u.a.createElement("div",null,u.a.createElement("h2",null,"Perks page is not ready"))},e}(u.a.Component)}}]);
+//# sourceMappingURL=component---src-pages-perks-js-e2a0a06084b31cfe4aae.js.map
