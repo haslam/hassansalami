@@ -16,7 +16,7 @@ export class Header extends React.Component {
   }
   handleMobileMenu () {
     const navmenu = document.getElementById('nav_menu');
-    navmenu.classList.toggle('mobile-toggler');  
+    navmenu.classList.toggle('mobile-toggler');
     this.setState((prevState) => ({ navBars: !prevState.navBars }))
   }
   render () {
@@ -36,20 +36,20 @@ export class Header extends React.Component {
           </Link>
         </h1>
         <nav className={styles.header__nav}>
-        <button 
-          className={styles.header__nav_btn} 
-          onClick={this.handleMobileMenu} 
+        <button
+          className={styles.header__nav_btn}
+          onClick={this.handleMobileMenu}
           aria-label="Navigation Menu"
         >
-          { this.state.navBars 
-            ? <FontAwesomeIcon icon={faBars} size="2x" /> 
-            : <FontAwesomeIcon icon={faTimes} size="2x" /> 
+          { this.state.navBars
+            ? <FontAwesomeIcon icon={faBars} size="2x" />
+            : <FontAwesomeIcon icon={faTimes} size="2x" />
           }
         </button>
           <ul className={styles.header__menu} id="nav_menu">
             <li className={styles.header__menu_item}><Link to={'/'}>Home</Link></li>
-            {/* <li className={styles.header__menu_item}><Link to={'/about'}>About</Link></li>
-            <li className={styles.header__menu_item}><Link to={'/blog'}>Blog</Link></li> */}
+            <li className={styles.header__menu_item}><Link to={'/about'}>About</Link></li>
+            <li className={styles.header__menu_item}><Link to={'/blog'}>Blog</Link></li>
             <li className={styles.header__menu_item}><Link to={'/contact'}>Contact</Link></li>
           </ul>
         </nav>

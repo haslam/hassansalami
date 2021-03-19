@@ -21,12 +21,13 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet
+        {/* <Helmet
           htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={siteTitle}
-        />
-        <Bio />
+        /> */}
+        <h4>Currently thinking…</h4>
+        {/* <Bio />
         <div className={card__container} style={{marginTop: rhythm(3), marginBottom: rhythm(1)}}>
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
@@ -47,7 +48,7 @@ class BlogIndex extends React.Component {
              />
           )
         })}
-        </div>
+        </div> */}
       </Layout>
     )
   }
